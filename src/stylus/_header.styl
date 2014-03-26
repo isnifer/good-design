@@ -1,5 +1,87 @@
 /* Шапка */
 .header
-  font-weight bold
-  font-size 3em
-  margin-bottom 30px
+  height 80px
+
+  &__logo
+    color #606060
+    font-size 22
+    background url(../img/header/logo.png) no-repeat 0 4px
+    height 25px
+    padding-left 50px !important
+    margin 18px 0 0
+
+  &__list
+    margin 0
+    padding 0
+    list-style none
+    font-size 15
+    font-weight bold
+
+  &__item
+    display inline-block
+    float left
+    line-height 70px
+    height 80px
+
+  &__link
+    color #515862
+    text-decoration none
+    display block
+    padding 0 15px
+    position relative
+    transition background ease .3s, border ease .3s
+
+    &:hover, &_state_active
+      background #12a3d6
+      border-bottom 10px solid #0080b7
+      color #c5f4ff
+
+      &:after, &:before 
+        bottom 0
+        left 50%
+        border solid transparent
+        content " "
+        height 0
+        width 0
+        position absolute
+        pointer-events none
+
+      &:after 
+        border-color rgba(0, 128, 183, 0);
+        border-bottom-color #0080b7
+        border-width 6px
+        margin-left -9px
+
+      &:before 
+        border-color rgba(0, 128, 183, 0);
+        border-bottom-color #0080b7
+        border-width 9px
+        margin-left -9px
+
+    &_blog
+      color #fff
+      background #f98561
+      line-height 25px
+      padding 0 15px
+      border-radius 5px
+      margin 22px 0 0
+      border-bottom 0
+
+      &:before, &:after
+        display none
+
+  &__search
+    line-height 70px
+    font-size 14
+    font-weight bold
+    cursor pointer
+    position relative
+
+    &:after
+      content ""
+      display inline-block
+      background url(../img/header/search.png) no-repeat 0 0
+      width 36px
+      height 36px
+      margin 15px 0 0 10px
+      position absolute

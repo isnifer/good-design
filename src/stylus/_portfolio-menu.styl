@@ -1,0 +1,137 @@
+.portfolio-menu
+  height 52px
+  border-top 1px solid #b3d5e4
+  border-bottom 1px solid #b3d5e4
+
+  &__wrapper
+    border-right 1px solid #b3d5e4
+    border-left 1px solid #b3d5e4
+    width 1020px
+    margin 0 auto
+    padding 0 30px
+
+  &__list, &__category-list
+    margin 0
+    padding 0
+    list-style none
+
+  &__list
+    float left
+    padding 10px 0
+  
+  &__item
+    display inline-block
+    text-transform uppercase
+    padding 5px 29px
+    border-left 1px solid #c3c4c4
+
+    &:first-child
+      border-left none
+
+  &__link 
+    color #515862
+    text-decoration none
+    -webkit-transition color ease .3s
+    -moz-transition color ease .3s
+    transition color ease .3s
+
+    &:hover, &_state_active
+      color #2190c1
+
+  &__category
+    width 175px
+    background #2190c1
+    position relative 
+    float left
+    height 50px
+    padding 7px 0
+
+    &:after
+      display block
+      width 13px
+      height 15px
+      position absolute
+      top 16px 
+      right 10px
+      background url(../img/portfolio-menu/arrow.png) no-repeat 0 0
+      content ""
+      -webkit-transform rotate(180deg)
+      -moz-transform rotate(180deg)
+      transform rotate(180deg)
+      -webkit-transition -webkit-transform ease .3s
+      -moz-transition -moz-transform ease .3s
+      transition transform ease .3s
+
+    &:hover
+
+      .portfolio-menu__category-list
+        opacity 1
+        
+
+      &:after
+        -webkit-transform rotate(0)
+        -moz-transform rotate(0)
+        transform rotate(0)       
+
+  &__category-title
+    color #c5f0ff
+    text-transform uppercase
+    font-size 20
+    display block
+    padding 5px 20px
+
+  &__category-list
+    background #f98561
+    padding 5px 10px 10px
+    position absolute
+    top 50px
+    width 175px
+    opacity 0
+    -webkit-transition opacity ease .3s
+    -moz-transition opacity ease .3s
+    transition opacity ease .3s
+    z-index 10
+
+  &__category-item
+    border-top 1px solid #f9af8c
+
+    &:first-child
+      border-top 0
+
+  &__category-link
+    color #f9f5d2
+    display block
+    padding 5px 0 5px 10px
+    position relative
+    text-decoration none
+
+    &:after
+      width 10px
+      height 10px
+      background url(../img/portfolio-menu/category-item-icon.png) no-repeat 0 -10px 
+      content ""
+      position absolute
+      right 0
+      top 10px
+
+    &:hover
+      color #2190c1
+
+      &:after
+        background-position 0 0
+
+  &__views
+    float left
+    margin-left 10px
+    padding 13px 0 0
+
+  &__view
+    display inline-block
+    width 24px
+    height 23px
+    background url(../img/portfolio-menu/view-icons.png) no-repeat 0 0
+    margin-left 5px
+    text-indent -9999px
+
+    &_square
+      background-position -24px 0

@@ -1,0 +1,40 @@
+.slider
+  margin 0 auto
+  position relative
+
+  .slidesjs-pagination-wrapper
+    z-index 999
+    position absolute
+    bottom 20px 
+    width 100%
+
+  .slidesjs-pagination-wrapper-inner
+    position relative
+    height 17px
+
+  .slidesjs-pagination
+    margin 0
+    padding 0
+    list-style none
+    position absolute
+    right 0
+
+    .slidesjs-pagination-item
+      display inline-block
+      float left
+      margin-left 5px
+      width 16px
+      height 17px
+
+      &:first-child
+        margin-left 0
+
+      a
+        background url(../img/slider/pagination.png) 0 -17px
+        display block
+        height 17px
+        border-radius 50%
+        text-indent -9999px
+
+        &.active
+          background-position 0 0

@@ -1,0 +1,57 @@
+.testimonials
+  background #f4f4f4
+  padding 0
+  text-align center
+
+  &__header
+    color #2190c1
+    font-size 30
+    font-weight 700
+    text-transform uppercase
+
+  &__quote
+    color #515862
+    font-size 25
+    font-weight bold
+    margin 10px 0 20px
+
+  &__people-list
+    margin 0 
+    padding 0
+    list-style none
+
+  &__people-title
+    color #f98561
+    margin-bottom 20px
+
+  &__people-item
+    display inline-block
+    height 90px
+    border-bottom 5px solid #c1c1c1
+    position relative
+
+    &_state_active
+      border-color #f98561
+
+      &:after, &:before
+        bottom 0
+        left 50%
+        border solid transparent
+        content " "
+        height 0
+        width 0
+        position absolute
+        pointer-events none
+
+      &:after
+        border-color rgba(249, 133, 97, 0)
+        border-bottom-color #f98561
+        border-width 6px
+        margin-left -6px
+      
+      &:before
+        border-color rgba(249, 133, 97, 0)
+        border-bottom-color #f98561
+        border-width 9px
+        margin-left -9px
+    

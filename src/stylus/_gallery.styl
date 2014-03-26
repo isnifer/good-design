@@ -1,0 +1,42 @@
+.gallery
+  padding 50px 0 20px
+
+  &__item
+    margin-bottom 20px
+
+  &__link
+    display block
+    padding 12px
+    background #fff
+    -webkit-transition background ease .3s
+    -moz-transition background ease .3s
+    transition background ease .3s
+
+    &:hover
+      background #a0a0a0
+
+      &:before
+        display block
+        width 100%
+        content attr(data-title)
+        font-size 25
+        font-weight bold
+        color #f0f0f0
+        position absolute
+        top 40px 
+        left 0
+        text-align center
+
+      &:after
+        display block
+        width 100%
+        top 140px
+        left 0
+        content attr(data-desc)
+        color #f0f0f0
+        font-size 15
+        text-align center
+        position absolute
+
+  &__photo
+    max-width 100%
