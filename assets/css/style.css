@@ -1321,6 +1321,195 @@ body
 {
     background: url('../img/clients/seyyahil.png') no-repeat center;
 }
+/* Who we are */
+.who
+{
+    padding: 20px 0 30px;
+
+    text-align: center;
+}
+.who__header
+{
+    font-size: 3.125em;
+    font-weight: 700;
+
+    margin-bottom: 10px;
+
+    text-transform: uppercase;
+
+    color: #2190c1;
+}
+.who__description
+{
+    font-size: .8125em;
+
+    color: #515862;
+}
+.who__description p
+{
+    margin: 0 0 20px;
+}
+.who__description p:first-child
+{
+    font-weight: 700;
+}
+.who__title
+{
+    font-size: 4.375em;
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    color: #515862;
+}
+/* Direction */
+.direction
+{
+    text-align: center;
+
+    border-top: 1px solid #dcdcdc;
+    border-bottom: 5px solid #a5a5a5;
+}
+.direction__item
+{
+    padding: 10px;
+
+    border-right: 1px solid #d7d7d7;
+}
+.direction__item:first-child
+{
+    border-left: 1px solid #d7d7d7;
+}
+.direction__item_1 .direction__icon
+{
+    background: url('../img/direction/icon_1.png') no-repeat center;
+}
+.direction__item_2 .direction__icon
+{
+    background: url('../img/direction/icon_2.png') no-repeat center;
+}
+.direction__item_3 .direction__icon
+{
+    background: url('../img/direction/icon_3.png') no-repeat center;
+}
+.direction__item_4 .direction__icon
+{
+    background: url('../img/direction/icon_4.png') no-repeat center;
+}
+.direction__icon
+{
+    width: 110px;
+    height: 110px;
+    margin: 0 auto;
+}
+.direction__title
+{
+    font-size: 1.25em;
+
+    margin: 0 0 5px;
+
+    color: #2190c1;
+}
+.direction__text
+{
+    font-size: .8125em;
+
+    margin: 5px 0 10px;
+
+    color: #515862;
+}
+/* Team */
+.team
+{
+    padding: 50px 0 30px;
+}
+.team__header
+{
+    font-size: 3.125em;
+    font-weight: 700;
+
+    margin-bottom: 50px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #2190c1;
+}
+.team__card
+{
+    margin-bottom: 8.333333333333334%;
+    padding: 20px;
+
+    border: 1px solid #ccc;
+    background: #fff;
+}
+.team__card_left
+{
+    -webkit-box-shadow: -15px -15px 0 0 #d3d3d3;
+       -moz-box-shadow: -15px -15px 0 0 #d3d3d3;
+            box-shadow: -15px -15px 0 0 #d3d3d3;
+}
+.team__card_right
+{
+    -webkit-box-shadow: 15px -15px 0 0 #d3d3d3;
+       -moz-box-shadow: 15px -15px 0 0 #d3d3d3;
+            box-shadow: 15px -15px 0 0 #d3d3d3;
+}
+.team__photo
+{
+    float: left;
+
+    width: 129px;
+    height: 129px;
+    margin: 0 20px 20px 0;
+}
+.team__info
+{
+    overflow: hidden;
+
+    text-align: center;
+}
+.team__position
+{
+    font-size: 1.0625em;
+
+    margin: 0 0 5px;
+
+    color: #666;
+}
+.team__name
+{
+    font-size: 1.5625em;
+    font-weight: 700;
+
+    margin: 0 0 5px;
+
+    text-transform: uppercase;
+
+    color: #2190c1;
+}
+.team__email
+{
+    font-size: .8125em;
+
+    margin: 0 0 15px;
+
+    color: #94979b;
+}
+.team__logo
+{
+    width: 130px;
+    height: 24px;
+    margin: 0 auto;
+
+    background: url('../img/team/logo.png') no-repeat 0 0;
+}
+.team__text
+{
+    font-size: .75em;
+
+    color: #515862;
+}
 /* Pager */
 .pager
 {

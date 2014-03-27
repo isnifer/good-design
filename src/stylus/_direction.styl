@@ -1,0 +1,30 @@
+.direction
+  text-align center
+  border-top 1px solid #dcdcdc
+  border-bottom 5px solid #a5a5a5
+
+  &__item
+    border-right 1px solid #d7d7d7
+    padding 10px
+
+    &:first-child
+      border-left 1px solid #d7d7d7
+
+    for i in (1..4)
+      &_{i} .direction__icon
+        background url("../img/direction/icon_" + i + ".png") no-repeat center
+
+  &__icon
+    width 110px 
+    height 110px
+    margin 0 auto
+
+  &__title
+    color #2190c1
+    em 20
+    margin 0 0 5px
+
+  &__text
+    color #515862
+    em 13
+    margin 5px 0 10px
